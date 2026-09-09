@@ -1,0 +1,30 @@
+export const workData = [
+  {
+    title: "Software Developer",
+    number: "01",
+    link: "https://medal.tv/",
+    company: "Medal.tv",
+    dates: "April 2023 — Aug 2026",
+    descriptions: [
+      "Developed and maintained production web and desktop applications for a platform serving 10–20 million monthly active users.",
+      "Built account security features including two-factor authentication, authenticator app integration, and passkey support.",
+      "Led development of ShadowPlay Batch Import, enabling users to import multiple external gameplay recordings through a scalable workflow.",
+      "Built and maintained Medal’s web and desktop onboarding experiences, creating a consistent journey from account creation through initial product setup.",
+      "Refactored the application’s top navigation architecture to improve component reuse, code organization, maintainability, and support for future product features.",
+      "Owned features from architecture and implementation through testing, deployment, analytics, and continued iteration.",
+      "Managed application state with Redux, RTK Query while collaborating with product and design teams.",
+    ],
+    tools: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Electron",
+      "Redux",
+      "RTK Query",
+      "Tailwind CSS",
+      "Firestore",
+      "GitHub Actions",
+    ],
+  },
+];
