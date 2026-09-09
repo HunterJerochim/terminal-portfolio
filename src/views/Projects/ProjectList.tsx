@@ -4,18 +4,18 @@ const GREATER_THAN = ">";
 
 const ProjectList = () => {
   return (
-    <div className="relative z-4 mx-auto flex w-full max-w-3xl flex-col items-start pt-10 pb-10">
+    <div className="relative z-4 mx-auto flex w-full max-w-3xl flex-col items-start py-8 sm:py-10">
       {projectData.map((project) => (
         <article
           key={project.title}
-          className="project-card group w-full border-l border-b border-l-transparent border-b-red-muted/20 px-4 py-6 text-left transition-colors duration-200 hover:border-l-red-bright"
+          className="project-card group w-full border-l border-b border-l-transparent border-b-red-muted/20 px-2 py-5 text-left transition-colors duration-200 hover:border-l-red-bright sm:px-4 sm:py-6"
         >
-          <div className="grid grid-cols-[32px_1fr] gap-3">
+          <div className="grid grid-cols-[24px_minmax(0,1fr)] gap-2 sm:grid-cols-[32px_minmax(0,1fr)] sm:gap-3">
             <span className="pt-1 font-mono text-xs tracking-widest text-red-muted">
               {project.number}
             </span>
             <div className="min-w-0">
-              <div className="flex items-center gap-2 place-content-between">
+              <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
                 <div className="flex items-center gap-2">
                   <span className="font-mono text-lg font-semibold text-red-bright transition-transform duration-200 group-hover:translate-x-1">
                     {GREATER_THAN}
@@ -30,7 +30,7 @@ const ProjectList = () => {
                   </a>
                 </div>
                 <div>
-                  <span className="text-terminal-muted/70 text-mono text-[11px] tracking-[0.1em]">
+                  <span className="break-all font-mono text-[10px] tracking-[0.06em] text-terminal-muted/70 sm:text-[11px] sm:tracking-[0.1em]">
                     {project.path}
                   </span>
                 </div>

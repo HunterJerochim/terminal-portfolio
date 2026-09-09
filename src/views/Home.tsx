@@ -10,7 +10,7 @@ const Home = () => {
   const typedName = useTypewriter(name);
 
   return (
-    <main className="terminal-bg relative isolate grid min-h-svh place-items-center overflow-hidden bg-void p-5 sm:p-10">
+    <main className="terminal-bg relative isolate grid min-h-svh place-items-center overflow-hidden bg-void p-4 sm:p-10">
       <div
         className="noise pointer-events-none absolute -inset-[40%] z-1 opacity-[0.035]"
         aria-hidden="true"
@@ -31,7 +31,7 @@ const Home = () => {
         <h1
           id="identity-name"
           aria-label={name}
-          className="m-0 min-h-[1.15em] font-mono text-[clamp(2.35rem,6vw,5.5rem)] leading-[1.05] font-bold tracking-[-0.065em] text-red-bright [text-shadow:0_0_0.35rem_rgba(255,30,30,0.8),0_0_2.5rem_rgba(135,0,0,0.35)]"
+          className="m-0 min-h-[1.15em] font-mono text-[clamp(2rem,11vw,5.5rem)] leading-[1.05] font-bold tracking-[-0.065em] text-red-bright [text-shadow:0_0_0.35rem_rgba(255,30,30,0.8),0_0_2.5rem_rgba(135,0,0,0.35)]"
         >
           <span aria-hidden="true">{typedName}</span>
           <span
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
 
         <nav
-          className="flex flex-wrap justify-center gap-5 sm:gap-7"
+          className="flex flex-wrap justify-center gap-3 sm:gap-7"
           aria-label="Social links"
         >
           <a
@@ -97,7 +97,7 @@ const Home = () => {
 
         <a
           href="mailto:hunter.jerochim@gmail.com"
-          className="mt-6 inline-block font-mono text-xs tracking-[0.16em] text-red-terminal transition-[color,text-shadow] duration-200 hover:text-red-bright hover:[text-shadow:0_0_0.65rem_rgba(255,43,43,0.65)] focus-visible:text-red-bright focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-red-terminal"
+          className="mt-6 inline-block max-w-full break-all font-mono text-xs tracking-[0.1em] text-red-terminal transition-[color,text-shadow] duration-200 hover:text-red-bright hover:[text-shadow:0_0_0.65rem_rgba(255,43,43,0.65)] focus-visible:text-red-bright focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-red-terminal sm:tracking-[0.16em]"
         >
           <span className="text-red-heading">email:</span>{" "}
           hunter.jerochim@gmail.com

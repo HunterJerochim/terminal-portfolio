@@ -9,10 +9,10 @@ const Work = () => {
   const typedWork = useTypewriter(HEADER);
 
   return (
-    <main className="terminal-bg projects-bg relative isolate flex min-h-svh w-full flex-col overflow-hidden bg-void p-5 sm:p-10">
+    <main className="terminal-bg projects-bg relative isolate flex min-h-svh w-full flex-col overflow-x-hidden bg-void p-4 sm:p-10">
       <Navbar />
       <section
-        className="identity relative z-4 mx-auto flex w-full max-w-3xl flex-col items-start gap-4 pt-24 text-left"
+        className="identity relative z-4 mx-auto flex w-full max-w-3xl flex-col items-start gap-3 pt-20 text-left sm:gap-4 sm:pt-24"
         aria-labelledby="work-heading"
       >
         <span className="font-mono text-xs text-red-heading tracking-[0.18em]">
@@ -20,7 +20,7 @@ const Work = () => {
         </span>
         <h1
           id="work-heading"
-          className="font-sans text-6xl font-semibold tracking-[0.18em] text-heading"
+          className="font-sans text-[clamp(2.5rem,13vw,3.75rem)] font-semibold tracking-[0.1em] text-heading sm:tracking-[0.18em]"
           aria-label={HEADER}
         >
           <span>{typedWork}</span>
@@ -32,7 +32,7 @@ const Work = () => {
       </section>
       <WorkCounter />
       <WorkList />
-      <span className="mx-auto w-full max-w-3xl font-mono text-[11px] text-red-muted tracking-[0.18em]">
+      <span className="relative z-4 mx-auto w-full max-w-3xl pb-2 font-mono text-[11px] tracking-[0.18em] text-red-muted">
         EOF
       </span>
     </main>
