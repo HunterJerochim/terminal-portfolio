@@ -18,8 +18,10 @@ export const projectData: Project[] = [
     description:
       "A transparent community platform. Every post, event, ledger entry and message is public to anyone with a link.",
     subDescriptions: [
-      "Public on the read side, invite only on the write side. Search engines are opted out, so it is viewable without being discoverable",
-      "A pnpm monorepo serving three clients: Next.js web, Electron desktop, and Expo mobile from one Express/Postgres API",
+      "15+ apps behind one login. Feeds, Chat, Events, Recipes, Media, Timeline, Maps, Lights, Chords, a Dev Tracker and more. Each app has its own API resource, and one shared catalog decides where each shows up on each platform.",
+      "Jackson, a local AI assistant. It runs through Ollama inside the Electron desktop app and can use tools across the platform: it controls smart lights, casts to the TV, searches your documents and recipes, and writes your morning summary.",
+      "Base, Node and Client devices. One desktop holds a member’s data and runs Jackson, and every other device reads from it. Spare desktops with GPUs can take on model work, and a router sends each request to the best machine on the home network.",
+      "Five clients from one codebase. A pnpm monorepo where Next.js web, Electron desktop and Expo mobile share Zod schemas, an RTK Query client and UI packages, all on one Express/Postgres API with Redis pub/sub for realtime.",
     ],
     tools: [
       "TypeScript",
@@ -29,6 +31,10 @@ export const projectData: Project[] = [
       "Electron",
       "Docker",
       "React Native",
+      "Redis",
+      "Ollama",
+      "Drizzle",
+      "Zod",
     ],
   },
   {
